@@ -1,12 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
+    <title>Registro de Usuario</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+        }
+        nav {
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+        }
+        main {
+            background-color: white;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <a href="../index.html"><- Volver al inicio</a>
-    
+
+<header>
+    <nav>
+        <a href="#">👩‍🎓 Estudiantes</a>
+        <a href="#">👨‍🏫 Profesores</a>
+        <a href="#">🏫 Escuelas</a>
+    </nav>
+</header>
+
+<main>
+    <h2>Registro de Usuario</h2>
+    <form>
+        <div>
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" placeholder="Escribe tu nombre">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="ejemplo@correo.com">
+        </div>
+        <div>
+            <label for="country">Country Name</label>
+            <select id="country" name="country">
+                <option value="mexico">México</option>
+                <option value="usa">Estados Unidos</option>
+                <option value="canada">Canadá</option>
+                <option value="spain">España</option>
+                <option value="brazil">Brasil</option>
+            </select>
+        </div>
+        <div>
+            <label>Gender</label>
+            <label><input type="radio" name="gender" value="male"> Hombre</label>
+            <label><input type="radio" name="gender" value="female"> Mujer</label>
+            <label><input type="radio" name="gender" value="other"> Otro</label>
+        </div>
+        <div>
+            <label><input type="checkbox" name="terms"> Acepto los términos y condiciones</label>
+        </div>
+        <div>
+            <label><input type="checkbox" name="newsletter"> ¿Recibir correos?</label>
+        </div>
+        <div>
+            <button type="submit">Sign Up</button>
+        </div>
+    </form>
+</main>
+
+<footer>
+    <p>🌐 Todos los derechos reservados &copy; 2024</p>
+</footer>
+
 </body>
 </html>
